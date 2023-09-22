@@ -1,0 +1,35 @@
+<html>
+        <head>
+          <title>Adivinar número</title>
+        
+      </head>
+
+      <body>
+        <h1>
+            Introducir numero para averiguar si aciertas.
+        </h1>
+        Numero: <input type ="text" id="n1"><br>
+        <input type=button value="Comprobar" onclick="numeroAleatorio(n1.value)">
+
+        <script>
+            var aleatorio=Math.floor(Math.random()* 100);
+            var limInferior = 0;
+            var limSuperior = 100;
+              
+            function numeroAleatorio(n1){
+
+
+            if(aleatorio==n1){
+                alert("Numero correcto.");
+            }
+            if(aleatorio<n1&&){
+                alert("Error, el número aleatorio es menor que "+n1+ ". Se encuentra entre " +limInferior+ " y " +limSuperior);
+            }
+            if(aleatorio>n1){
+                alert("Error, el número aleatorio es mayor que "+n1+ ". Se encuentra entre " +limInferior+ " y " +limSuperior);
+            }
+        }
+
+        </script>
+    </body>
+    </html>

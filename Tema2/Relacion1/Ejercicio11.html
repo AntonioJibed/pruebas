@@ -1,0 +1,39 @@
+<html>
+        <head>
+          <title>Adivinar numero mejorado++</title>
+        
+      </head>
+
+      <body>
+        <h1>
+            Introducir numero para averiguar si aciertas.
+        </h1>
+        Numero: <input type ="text" id="n1"><br>
+        <input type=button id="boton" value="Comprobar" onclick="numeroAleatorio(n1.value)">
+
+        <script>
+            var aleatorio=Math.floor(Math.random()* 100);
+            var intentos=1;
+              
+            function numeroAleatorio(n1){
+            
+
+            if(aleatorio==n1){
+                alert(`Numero correcto. Numero de intentos realizado ${intentos}`);
+            }
+            if(aleatorio<n1){
+                alert("Error, el número aleatorio es menor.");
+            }
+            if(aleatorio>n1){
+                alert("Error, el número aleatorio es mayor.");
+            }
+            intentos++;
+            if(intentos>10) {
+                alert("HAS PERDIDO");
+                boton.disabled=true;
+            }
+        }
+
+        </script>
+    </body>
+    </html>

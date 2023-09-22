@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+<body>
+
+    <H1> NumeroMayorDe10</H1>
+    Introduce un numero: <input type ="text" id="n1"><br>
+
+
+    <input type="button" value="Comprobar" onclick="comprobar(n1.value)">
+    <script>
+        function comprobar(n1){
+          if (n1%2==0 && n1>10){
+            document.write("El número es correcto.")
+          }
+          else{
+            document.write("El número es incorrecto.")
+          }
+        }
+    </script>
+
+
+    
+</body>
+</html>
